@@ -13,9 +13,7 @@ class Human:
     def movement(self, arah):
         if arah.upper() == 'L':
             self.__Position -= self._Speed
-            self.__Position -= self.Speed
         elif arah.upper() == 'R':
-            self.__Position += self.Speed
             self.__Position += self._Speed
 
     # Getter    
@@ -109,7 +107,7 @@ support = Support("Udin", 30)
 
 # Memanggil Metode class Human
 print(f'Position (before) : {warrior.get_position()}')   # sebelum
-warrior.Speed = 5
+warrior.set_speed(5)
 warrior.movement('R')
 print(f'Position (after)  : {warrior.get_position()}')   # sesudah
 
@@ -129,5 +127,5 @@ print(f'Warrior (health)  : {warrior.get_health()}')
 print(f'Support (speed)   : {support.Speed}')
 support.special(warrior)
 # sesudah
-print("Warrior (health)", warrior.get_health())
-print("Support (speed): ",support.Speed)
+print(f'Warrior (health)  : {warrior.get_health()}')
+print(f'Support (speed)   : {support.Speed}')

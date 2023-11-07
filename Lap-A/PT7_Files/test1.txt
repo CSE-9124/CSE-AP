@@ -1,0 +1,4 @@
+This is the write command.
+It allows us to write in a particular file
+Hello Programers
+Programing is Fun

@@ -1,0 +1,20 @@
+Jurusan Sistem Informasi adalah salah satu jurusan di bidang ilmu komputer yang fokus pada pengembangan dan penerapan teknologi informasi dalam konteks bisnis dan 
+organisasi. Jurusan ini menggabungkan aspek teknologi informasi, manajemen, dan analisis bisnis untuk menciptakan solusi informatika yang efektif dan efisien. Jurusan 
+Sistem Informasi membekali mahasiswanya dengan pengetahuan dan keterampilan dalam mengelola sistem informasi, pengembangan perangkat lunak, manajemen proyek IT, analisis 
+bisnis, basis data, keamanan informasi, serta strategi dan inovasi teknologi. Melalui kombinasi ini, mahasiswa jurusan Sistem Informasi belajar untuk memahami kebutuhan 
+bisnis, merancang sistem informasi yang tepat, mengimplementasikan solusi teknologi yang inovatif, dan mengoptimalkan penggunaan informasi untuk mendukung pengambilan 
+keputusan yang baik.
+
+Jurusan Sistem Informasi melatih mahasiswa dalam kemampuan analisis dan pemecahan masalah yang kuat. Mereka belajar untuk mengidentifikasi masalah dalam konteks bisnis, 
+menganalisis persyaratan pengguna, dan merancang solusi yang tepat menggunakan teknologi informasi. Kemampuan ini sangat dibutuhkan dalam dunia bisnis yang kompleks, di 
+mana biasanya membutuhkan programer yang dapat memahami tantangan yang dihadapi dan menghasilkan solusi inovatif. Salah satu mata kuliah yang dapat melatih kemampuan 
+tersebut adalah Algoritma dan Pemrograman. Algoritma adalah prosedur pemecahan masalah dalam bahasa sangat alami (bahasa manusia), langkah-langkah pemecahan masalah 
+dalam algoritma nantinya akan dituangkan menjadi program komputer untuk mempercepat/mengotomasi penyelesaian masalah. Sedangkan untuk bahasa pemrograman (Programing 
+Language) yang digunakan untuk menuangkan algoritma kedalam bahasa program sangat tergantung selera dan penguasaan pada individu programmer.
+
+Jurusan Sistem Informasi mempelajari berbagai bahasa pemrograman yang berguna dalam pengembangan sistem informasi. Beberapa bahasa pemrograman yang dipelajari di jurusan 
+ini antara lain Python, Javascript, Java, dan C++. Dengan kombinasi antara kemampuan programming dan manajemen, lulusan Sistem Informasi sangat cocok untuk masuk sebagai 
+ahli IT di perusahaan. Peluang kerja yang sesuai dengan kompetensi lulusan jurusan Sistem Informasi adalah sangat luas dan menjanjikan. Jurusan  Sistem Informasi 
+menawarkan prospek karir yang menarik dan beragam di dunia digital saat ini. Jadi kamu tidak perlu khawatir tentang peluang kerja dengan jurusan sistem informasi. 
+Beberapa karir yang bisa dipilih oleh lulusan jurusan Sistem Informasi antara lain System Analyst, Software Developer, Konsultan IT, Cyber Security, Database 
+Administrator, IT Project Manager, dan Konsultan Sistem Informasi.

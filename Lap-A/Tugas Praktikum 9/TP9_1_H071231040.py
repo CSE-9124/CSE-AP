@@ -4,16 +4,18 @@ os.system('cls')
 
 # Class Grandparent
 class Human:
-    def __init__(self, name, pos_x, speed):
+    def __init__(self, name, pos_x):
         self.Name = name
         self.__Position = int(pos_x)
-        self._Speed = int(speed)
+        self._Speed = 0
 
     # Method
     def movement(self, arah):
         if arah.upper() == 'L':
             self.__Position -= self._Speed
+            self.__Position -= self.Speed
         elif arah.upper() == 'R':
+            self.__Position += self.Speed
             self.__Position += self._Speed
 
     # Getter    
@@ -30,8 +32,8 @@ class Human:
 
 # Class Parent
 class Hero(Human):
-    def __init__(self, name, pos_x, speed):
-        super().__init__(name, pos_x, speed)
+    def __init__(self, name, pos_x):
+        super().__init__(name, pos_x)
         self._Power = 15
         self._Health = 400
         self._Armor = 15
@@ -63,8 +65,8 @@ class Hero(Human):
 
 # Class Child
 class Warrior(Hero):
-    def __init__(self, name, pos_x, speed):
-        super().__init__(name, pos_x, speed)
+    def __init__(self, name, pos_x):
+        super().__init__(name, pos_x)
         self._Power = 26
         self._Armor = 30
 
@@ -75,10 +77,10 @@ class Warrior(Hero):
         target._Health -= self._Power
 
 class Assassin(Hero):
-    def __init__(self, name, pos_x, speed):
-        super().__init__(name, pos_x, speed)
+    def __init__(self, name, pos_x):
+        super().__init__(name, pos_x)
         self._Power = 35
-        self._Speed = 4
+        self.Speed = 4
 
     # Method
     def special(self, target):
@@ -87,27 +89,27 @@ class Assassin(Hero):
         target._Health -= self._Power
 
 class Support(Hero):
-    def __init__(self, name, pos_x, speed):
-        super().__init__(name, pos_x, speed)
+    def __init__(self, name, pos_x):
+        super().__init__(name, pos_x)
         self._Health = 500
         self._Armor = 8
-        self._Speed = 4
+        self.Speed = 4
 
     # Method
     def special(self, target):
-        self._Speed = 6
+        self.Speed = 6
         target._Health += 150
 
 
 # Objek
-warrior = Warrior("Bambang", 10, 5)
-assassin = Assassin("Joko", 25, 5)
-support = Support("Udin", 30, 5)
+warrior = Warrior("Bambang", 10)
+assassin = Assassin("Joko", 25)
+support = Support("Udin", 30)
 
 
 # Memanggil Metode class Human
 print(f'Position (before) : {warrior.get_position()}')   # sebelum
-warrior.set_speed(5)
+warrior.Speed = 5
 warrior.movement('R')
 print(f'Position (after)  : {warrior.get_position()}')   # sesudah
 
@@ -124,8 +126,8 @@ print("-"*50)
 
 # sebelum
 print(f'Warrior (health)  : {warrior.get_health()}')
-print(f'Support (speed)   : {support.get_speed()}')
+print(f'Support (speed)   : {support.Speed}')
 support.special(warrior)
 # sesudah
 print("Warrior (health)", warrior.get_health())
-print("Support (speed): ",support.get_speed())
+print("Support (speed): ",support.Speed)

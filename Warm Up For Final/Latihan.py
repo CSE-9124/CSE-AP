@@ -40,8 +40,16 @@
 # print(KPK(x, y))
 
 
-N = map(int, input().split())
+# N = map(int, input().split())
 
-N_set = set(N)
+# N_set = set(N)
 
-print(list(N_set))
+# print(list(N_set))
+
+
+
+S = input()
+
+new_S = S.replace('a', '_$').replace('b', '+??=??-').replace('c', '*;:x').replace('e', ';-&-;').replace('g', '<=+=>').replace('n', '#1#').replace('o', '-#-').replace(' ', '^>^')
+
+print(new_S)

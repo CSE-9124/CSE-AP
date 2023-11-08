@@ -34,6 +34,6 @@ Mahasiswa_2 = Mahasiswa('Valeri', 'C031231006', 'Kedokteran Hewan', 3.8)
 # Memanggil Method
 Mahasiswa_1.Tampilkan_info()
 print(f'Predikat : {Mahasiswa_1.Hitung_predikat()}')
-print()
+print('-' * 50)
 Mahasiswa_2.Tampilkan_info()
 print(f'Predikat : {Mahasiswa_2.Hitung_predikat()}')

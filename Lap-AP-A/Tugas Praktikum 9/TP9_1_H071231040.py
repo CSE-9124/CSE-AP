@@ -115,9 +115,9 @@ print("-"*50)
 
 
 # Memanggil Metode class Hero
-print(f'Health (before)   : {warrior.get_health()}')    # sebelum
-assassin.attack(warrior)
-print(f'Health (after)    : {warrior.get_health()}')     # sesudah
+print(f'Health (before)   : {assassin.get_health()}')    # sebelum
+warrior.attack(assassin)
+print(f'Health (after)    : {assassin.get_health()}')     # sesudah
 
 print("-"*50)
 

@@ -2,16 +2,16 @@
 N = int(input())
 
 for i in range(N):
-    K1, K2 = map(int, input().split(' '))
-    A = list(map(int, input().split(' ')))
-
-    on_time = sum(1 for a in A if a <= 0)
+    K1, K2 = map(int, input().split())
+    A = list(map(int,input().split()))
 
 
-    if K1 - on_time > K2:
+    datang_awal = [i for i in A if i <= 0]
+
+    if len(datang_awal) >= K2:
+        print("DILANJUTKAN")
+    elif len(datang_awal) < K2:
         print("DIBATALKAN")
-    else:
-        print("LANJUT ASISTENSI")
 
 
 # CARA 2
@@ -34,20 +34,3 @@ for i in range(n):
 
 for i in status:
     print(i)
-
-
-# CARA 3
-n = int(input())
-
-status = []
-for i in range(n):
-    k1, k2 = map(int, input().split())
-    a = list(map(int,input().split()))
-
-
-    datang_awal = [i for i in a if i <= 0]
-
-    if len(datang_awal) >= k2:
-        print("DILANJUTKAN")
-    elif len(datang_awal) < k2:
-        print("DIBATALKAN")

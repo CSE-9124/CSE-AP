@@ -1,1 +1,0 @@
-S = input().replace("o", "-#-").replace("e", ";-&-;").replace()

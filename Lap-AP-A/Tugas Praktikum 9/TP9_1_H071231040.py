@@ -11,10 +11,11 @@ class Human:
 
     # Method
     def movement(self, arah):
-        if arah.upper() == 'L':
-            self.__Position -= self._Speed
-        elif arah.upper() == 'R':
-            self.__Position += self._Speed
+        for i in arah:
+            if i.upper() == 'L':
+                self.__Position -= self._Speed
+            elif i.upper() == 'R':
+                self.__Position += self._Speed
 
     # Getter    
     def get_position(self):
@@ -108,7 +109,7 @@ support = Support("Udin", 30)
 # Memanggil Metode class Human
 print(f'Position (before) : {warrior.get_position()}')   # sebelum
 warrior.set_speed(5)
-warrior.movement('R')
+warrior.movement('RRR')
 print(f'Position (after)  : {warrior.get_position()}')   # sesudah
 
 print("-"*50)
@@ -122,6 +123,7 @@ print(f'Health (after)    : {assassin.get_health()}')     # sesudah
 print("-"*50)
 
 
+# Memanggil Metode Special
 # sebelum
 print(f'Warrior (health)  : {warrior.get_health()}')
 print(f'Support (speed)   : {support.Speed}')

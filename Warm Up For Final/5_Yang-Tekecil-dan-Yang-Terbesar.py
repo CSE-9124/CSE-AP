@@ -1,4 +1,10 @@
 # CARA 1:
+N = sorted(list(map(int, input().split())))
+
+print(f'{N[0]} {N[-1]}')
+
+
+# CARA 2:
 def maksimum(*angka):
     maks = angka[0]
     for angka_terbesar in angka:
@@ -18,9 +24,3 @@ def minimum(*angka):
 N = list(map(int, input().split(' ')))
 
 print(f'{minimum(*N)} {maksimum(*N)}')
-
-
-# CARA 2:
-N = sorted(list(map(int, input().split())))
-
-print(f'{N[0]} {N[-1]}')

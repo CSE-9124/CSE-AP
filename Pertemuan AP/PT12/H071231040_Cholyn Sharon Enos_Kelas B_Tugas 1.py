@@ -1,7 +1,5 @@
 class Mahasiswa:
-    def __init__(self, nama, nim):
-        self.nama = nama
-        self.nim = nim
+    def __init__(self):
         self.daftar_mahasiswa = {}
 
     def Tambah(self, nama, nim):
@@ -29,7 +27,7 @@ class Mahasiswa:
             print(f'{nama} ({nim})')
 
 
-daftar_mahasiswa = Mahasiswa('Nama', 'H071230')
+daftar_mahasiswa = Mahasiswa()
 
 daftar_mahasiswa.Tambah('Cholyn Sharon Enos', 'H071231040')
 daftar_mahasiswa.Tambah('Andi Riswanda', "H071231008")

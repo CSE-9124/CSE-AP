@@ -45,6 +45,7 @@
 #         print('betul')
 #     case _:
 
+
 # Study : Mencari Angka genap atau ganjil
 # angka = int(input())
 

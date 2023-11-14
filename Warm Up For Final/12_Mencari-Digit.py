@@ -1,3 +1,6 @@
+'''Soal : Program menerima satu inputan n, kemudian setiap digit dari n, 
+tentukan apakah digit tersebut merupakan pembagi bulat dari bilangan n tersebut '''
+
 N = input()
 
 jumlah_digit_pembagi = 0

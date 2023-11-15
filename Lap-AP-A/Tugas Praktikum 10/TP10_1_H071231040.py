@@ -43,10 +43,12 @@ while True:
         # Detail Anda
         case 1:
             try:
-                clear()
                 if User.Nama:
                     pass
-                
+                elif User.Nama == None:
+                    raise NameError
+                clear()
+
                 print(f'+{Garis(60):^60}+\n{Judul_Tabel("Detail Anda")}\n+{Garis(60):^60}+')
                 print(f'{Isi_Tabel(f"Nama     : {User.Nama}")}')
                 print(f'{Isi_Tabel(f"Email    : {User.Email}")}')
@@ -59,9 +61,12 @@ while True:
         # Ubah Nama
         case 2:
             try:
-                if User.Nama == None:
+                if User.Nama:
                     pass
-                
+                elif User.Nama == None:
+                    raise NameError
+                clear()
+
                 print(f'+{Garis(60):^60}+\n{Judul_Tabel("Ubah Nama")}\n+{Garis(60):^60}+')
 
                 while True:
@@ -105,9 +110,10 @@ while True:
             path = 'C:/Users/USER/OneDrive/Dokumen/Kuliah/CSE-AP/Lap-AP-A/Tugas Praktikum 10'
             os.chdir(path)
             try:
-                clear()
                 if User.Nama:
                     pass
+                clear()
+
                 print(f'+{Garis(60):^60}+\n{Judul_Tabel("Save Data Pada File")}\n+{Garis(60):^60}+')
 
                 Files = input(' Silahkan Masukkan Nama File : ') + '.txt'

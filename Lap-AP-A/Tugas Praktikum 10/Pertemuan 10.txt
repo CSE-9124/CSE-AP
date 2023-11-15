@@ -1,11 +1,11 @@
 +============================================================+
 |                    DATA YANG TERSIMPAN                     |
 +============================================================+
-|Nama         : Cholyn                                       |
+|Nama         : Cholyn Sharon                                |
 |Email        : sharoncholyn@student.unhas.ac.id             |
 |Password     : Makassar2018                                 |
 +============================================================+
-|Nama         : CSE                                          |
-|Email        : sharoncholyn@student.unhas.ac.id             |
-|Password     : Makassar2018                                 |
+|Nama         : Christofer Billy                             |
+|Email        : citatosan@student.unhas.ac.id                |
+|Password     : Citatosan101204                              |
 +============================================================+

@@ -1,25 +1,25 @@
 # CARA 1:
-# def pola(a):
-#     a = int(a)
-#     for b in range (a):
-#         if b % 2 == 0:
-#             for c in range(b + 1):
-#                 if c % 2 == 0:
-#                     print('+', end='')
-#                 else:
-#                     print('-', end='')
-#         elif b % 2 != 0:
-#             for c in range(b + 1):
-#                 if c % 2 == 0:
-#                     print('-', end='')
-#                 else:
-#                     print('+', end='')
-#         print()
+def pola(a):
+    a = int(a)
+    for b in range (a):
+        if b % 2 == 0:
+            for c in range(b + 1):
+                if c % 2 == 0:
+                    print('+', end='')
+                else:
+                    print('-', end='')
+        elif b % 2 != 0:
+            for c in range(b + 1):
+                if c % 2 == 0:
+                    print('-', end='')
+                else:
+                    print('+', end='')
+        print()
 
-# x = int(input())
-# if 1 <= x <= 10:
-#     print(pola(x))
-# else: print('Error!!!')
+x = int(input())
+if 1 <= x <= 10:
+    print(pola(x))
+else: print('Error!!!')
 
 
 # CARA 2:

@@ -1,4 +1,4 @@
-# Berputar Searah Jarum Jam
+''' Berputar Searah Jarum Jam '''
 def Putaran_Matriks(Matriks, Putaran):
     for _ in range(Putaran):
         Matriks = list(zip(*Matriks[::-1]))
@@ -17,11 +17,12 @@ for j in Hasil:
     print(' '.join(j))
 
 
-# Berputar Berlawanan Arah Jarum Jam
+''' Berputar Berlawanan Arah Jarum Jam '''
 x = input().split()
 y = input().split()
 z = input().split()
 Putaran = int(input())
+
 
 if Putaran == 1 or Putaran == 2 :
     x = x[::-1]
@@ -40,7 +41,7 @@ elif Putaran == 3 :
     for a, b, c in zip(x,y,z):
         print(c, b, a)
 
-else :
+elif Putaran % 4 == 0 :
     a = [x, y, z]
     for i in a:
         print(*i)

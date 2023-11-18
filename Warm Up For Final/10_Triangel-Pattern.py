@@ -1,12 +1,12 @@
 N = int(input())
 
-# Piramid Kiri
+''' PIRAMID KIRI '''
 for i in range(N):
     for _ in range(i+1):
         print('*',end='')
     print()
 
-# Piramid Kanan
+''' PIRAMID KANAN '''
 for i in range(N):
     for j in range(N-i-1):
         print(' ',end='')

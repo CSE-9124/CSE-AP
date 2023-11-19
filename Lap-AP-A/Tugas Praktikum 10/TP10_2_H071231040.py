@@ -36,7 +36,8 @@ dog = Dog("Buddy")
 cat = Cat("Whiskers")
 
 # Polymorphism
-
+print(f'Anjing bernama {dog.get_Name()} mengeluarkan suara {animal_sound(dog)}')
+print(f'Kusing bernama {cat.get_Name()} mengeluarkan suara {animal_sound(cat)}')
 
 
 class Human:
@@ -47,6 +48,8 @@ class Human:
 
         def get_Age(self):
             return self.__Age
+        def get_Gender(self):
+            return self._Gender
         
         def set_Age(self, New_Age):
             self.__Age = New_Age
@@ -54,4 +57,4 @@ class Human:
 class Titan(Human):
     def __init__ (self, Name, Age, Gender):
         super().__init__(Name, Age, Gender)
-        self._Power
+        self._Power = int

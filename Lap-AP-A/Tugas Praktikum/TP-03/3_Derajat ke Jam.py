@@ -1,3 +1,4 @@
+# Soal 3 : Mengubah Angka Derajat ke dalam Bentuk Satuan Jam yaitu HH:MM:SS.
 # CARA 1:
 while True:
    M = float(input())

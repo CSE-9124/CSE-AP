@@ -18,13 +18,15 @@ elif Suku == 1:
 else:
     print('Input Bilangan Positif')
 
+
 # CARA 2 : Menggunakan For Loop
+print()
 suku = int(input())
 U1 = 0
 U2 = 1
 
 if suku > 0:
-    for n in range(suku+1):
+    for n in range(suku):
         print(U1, end=" ")
         U3 = U1 + U2
         U1 = U2

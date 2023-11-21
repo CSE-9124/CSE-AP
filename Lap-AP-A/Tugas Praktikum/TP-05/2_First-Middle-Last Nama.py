@@ -1,7 +1,8 @@
 # Soal 2 : Mengambil Huruf pertama, tengah, dan akhir pada nama
+
 Kata = input('Masukkan Kata: ')
 
-# CARA 1
+# CARA 1 :
 if len(Kata) % 2 == 0:
     hasil = Kata[0] + ' ' + Kata[-1]
     print(hasil)

@@ -7,7 +7,7 @@
 
 def Pattern(n):
     for i in range(1, n + 1):
-        spaces = '' * (n - i)
+        spaces = ' ' * (n - i)
         numbers = (''.join(str(j) for j in range(1, i+1)))
         print(spaces + numbers)
 
@@ -15,3 +15,5 @@ n = int(input())
 
 Pattern(n)
 
+
+# ======================== Test Case ========================

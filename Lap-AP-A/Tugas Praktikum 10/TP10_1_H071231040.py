@@ -1,6 +1,8 @@
 import os
 import re
 
+
+''' Function '''
 def clear():
     os.system('cls')
 def Garis(n):
@@ -10,6 +12,8 @@ def Judul_Tabel(kata):
 def Isi_Tabel(kata):
     return f"|{kata.ljust(60)}|"
 
+
+''' Class '''
 class Data_User:
     def __init__ (self, nama, email, password):
         self.Nama = nama
@@ -22,6 +26,7 @@ class Data_User:
         self.__Password = Pass_Baru
 
 
+''' Terminal '''
 clear()
 while True:
     print(f'''+{Garis(60):^60}+

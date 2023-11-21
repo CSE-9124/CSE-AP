@@ -1,17 +1,18 @@
-import os
+from abc import ABC, abstractmethod
 
-def clear():
-    os.system('cls')
-
-class Animal:
+class Animal(ABC):
     def __init__(self, name):
-        self._name = name
+        self.__name = name
+
+    @abstractmethod
+    def sound(self):
+        pass
 
     def get_Name(self):
-        return self._name
+        return self.__name
     
     def set_Name(self, new_name):
-        self._name = new_name
+        self.__name = new_name
 
 class Dog(Animal):
     def __init__(self, name):
@@ -35,26 +36,26 @@ def animal_sound(animal):
 dog = Dog("Buddy")
 cat = Cat("Whiskers")
 
-# Polymorphism
 print(f'Anjing bernama {dog.get_Name()} mengeluarkan suara {animal_sound(dog)}')
 print(f'Kusing bernama {cat.get_Name()} mengeluarkan suara {animal_sound(cat)}')
 
 
-class Human:
-    def __init__(self, Name, Age, Gender):
-        self.Name = Name
-        self.__Age = int(Age)
-        self._Gender = Gender
 
-        def get_Age(self):
-            return self.__Age
-        def get_Gender(self):
-            return self._Gender
+# class Human:
+#     def __init__(self, Name, Age, Gender):
+#         self.Name = Name
+#         self.__Age = int(Age)
+#         self._Gender = Gender
+
+#         def get_Age(self):
+#             return self.__Age
+#         def get_Gender(self):
+#             return self._Gender
         
-        def set_Age(self, New_Age):
-            self.__Age = New_Age
+#         def set_Age(self, New_Age):
+#             self.__Age = New_Age
 
-class Titan(Human):
-    def __init__ (self, Name, Age, Gender):
-        super().__init__(Name, Age, Gender)
-        self._Power = int
+# class Titan(Human):
+#     def __init__ (self, Name, Age, Gender):
+#         super().__init__(Name, Age, Gender)
+#         self._Power = int

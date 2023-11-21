@@ -1,3 +1,4 @@
+# Soal 4 : Membuat Fungsi catAndMouse untuk Mengembalikan Siapa yang akan Menangkap Mouse atau Mouse yang akan lolos
 # CARA 1: Menggunakan Fungsi abs()
 def catAndMouse(catA, catB, mosC):
     A = abs(mosC - catB)

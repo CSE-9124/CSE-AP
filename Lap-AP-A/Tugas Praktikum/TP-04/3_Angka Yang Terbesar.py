@@ -1,3 +1,4 @@
+# Soal 3 : Membuat Fungsi yang dapat Menemukan Angka Terbesar dalam Sebuah Daftar Angka.
 def maksimum(*angka):
     maks = angka[0]
     for angka_terbesar in angka:

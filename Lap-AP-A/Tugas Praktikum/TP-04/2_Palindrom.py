@@ -1,4 +1,5 @@
-# CARA 1: Menggunakan Index [::-1]
+# Soal 2 : Membuat Fungsi yang dapat Memeriksa Apakah Sebuah Kata adalah Palindrom atau Bukan.
+# CARA 1 : Menggunakan Index [::-1]
 def palindrom(kata: str) -> str:
     kata = kata.replace(' ', '').lower()
 
@@ -10,7 +11,8 @@ def palindrom(kata: str) -> str:
 word = input('Masukkan Kata : ')
 print(palindrom(word))
 
-# CARA 2: Menggunakan Methode .join(reversed())
+
+# CARA 2 : Menggunakan Methode .join(reversed())
 def palindrom(kata: str) -> str:
     kata = kata.replace(' ', '').lower()
 

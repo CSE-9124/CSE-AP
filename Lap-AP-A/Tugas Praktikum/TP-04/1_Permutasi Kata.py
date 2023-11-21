@@ -1,4 +1,5 @@
-# CARA 1: Tanpa Input
+# Soal 1 : Membuat Fungsi yang Menerima String sebagai Inputan dan Menghasilkan Deret Permutasi dari Kata Tersebut.
+# CARA 1 : Tanpa Input
 def stringpermutation(Kata):
     try:
         permutasi = []
@@ -15,7 +16,7 @@ stringpermutation(123)
 stringpermutation('Ayam')
 
 
-# CARA 2: Jika meminta Inputan
+# CARA 2 : Jika meminta Inputan
 def stringPermutation(Kata):
     if type(Kata) == str:
         if Kata.isnumeric():

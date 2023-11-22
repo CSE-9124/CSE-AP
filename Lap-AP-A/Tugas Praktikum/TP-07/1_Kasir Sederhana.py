@@ -2,6 +2,8 @@ import os
 import datetime
 import random
 
+def clear():
+    os.system('cls')
 def Garis(n):
     print('=' * n)
 
@@ -69,6 +71,7 @@ def Tabel_Riwayat_Transaksi(Waktu, ID, Nominal):
 
 
 # BERIKUT YG AKAN MUNCUL DI TERMINAL
+clear()
 Garis(60)
 print('SELAMAT DATANG'.center(60))
 Garis(60)
@@ -76,16 +79,21 @@ Nama = input('Masukkan nama kasir \t: ')
 Garis(60)
 
 while True:
-    print('''Pilih opsi:
-1. Transaksi baru
-2. Cari transaksi
-3. Keluar ''')
+    print('Pilih opsi:\n1. Transaksi baru\n2. Cari transaksi\n3. Keluar ')
     Garis(60)
     opsi = int(input('Masukkan opsi pilihan \t: '))
     Garis(60)
 
     match opsi:
         case 1:
+            clear()
+            Garis(60)
+            print('TRANSAKSI BARU'.center(60))
+            Garis(60)
+
+            path = 'C:/Users/USER/OneDrive/Dokumen/Kuliah/CSE-AP/Lap-AP-A/Tugas Praktikum/TP-07'
+            os.chdir(path)
+
             Produk = []
             Total_Produk = 0
             while True:
@@ -141,6 +149,14 @@ while True:
                     break
 
         case 2:
+            clear()
+            Garis(60)
+            print('CARI TRANSAKSI'.center(60))
+            Garis(60)
+
+            path = 'C:/Users/USER/OneDrive/Dokumen/Kuliah/CSE-AP/Lap-AP-A/Tugas Praktikum/TP-07'
+            os.chdir(path)
+    
             Cari = input('Masukkan ID transaksi \t: ')
             Nama_Folder = 'invoices'
             Cari_Path = os.path.join(Nama_Folder, f'{Cari}.txt')
@@ -152,13 +168,15 @@ while True:
                     print('_' * 70)   
             else:
                 print(f"File dengan ID {Cari} tidak ditemukan")
-        
+
         case 3:
+            clear()
             print('SAMPAI JUMPA'.center(60))
             Garis(60)
             break
 
         case _:
-            print('Invalid Opsi'.center(60))
+            clear()
+            print('INVALID OPSI'.center(60))
             Garis(60)
             break

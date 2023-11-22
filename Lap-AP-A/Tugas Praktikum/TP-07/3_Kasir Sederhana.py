@@ -90,6 +90,9 @@ while True:
     GGG()
     match opsi:
         case 1:
+            path = 'C:/Users/USER/OneDrive/Dokumen/Kuliah/CSE-AP/Lap-AP-A/Tugas Praktikum/TP-07'
+            os.chdir(path)
+
             ID = id(kasir)
             file_name = ID + ".txt"
             file_path = os.path.join(folder_path, file_name)
@@ -130,6 +133,9 @@ while True:
             addHistory(WAKTU, ID, NOMINAL)
 
         case 2:
+            path = 'C:/Users/USER/OneDrive/Dokumen/Kuliah/CSE-AP/Lap-AP-A/Tugas Praktikum/TP-07'
+            os.chdir(path)
+
             cari = input("Masukkan ID file transaksi : ")
             cari_path = folder_path + "/" + cari + ".txt"
             if os.path.exists(cari_path):

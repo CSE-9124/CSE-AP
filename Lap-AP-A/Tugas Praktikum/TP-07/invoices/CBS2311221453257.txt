@@ -1,9 +1,9 @@
 
-                       TOKO CHOLYN SHARON ENOS                        
+                    TOKO CHRISTOFER BILLY SAPUTRA                     
 
 ======================================================================
-Nama kasir          : Cholyn Sharon Enos
-Waktu transaksi     : 10/25/23 12:19
+Nama kasir          : Christofer Billy Saputra
+Waktu transaksi     : 11/22/23 14:53
 ======================================================================
 
                             Daftar Produk                             
@@ -11,8 +11,8 @@ Waktu transaksi     : 10/25/23 12:19
      ============================================================     
      |        Nama        |   Harga    | Jumlah |     Total     |
      ============================================================     
-     | Laptop_ASUS-ROG... | Rp10000000 |   1    |    Rp10000000 |
-     | Mouse Gaming Rexus |  Rp5000000 |   1    |     Rp5000000 |
+     | Laptop_Lenovo-L... | Rp10000000 |   1    |    Rp10000000 |
+     | Keyboard Gaming... |  Rp5000000 |   1    |     Rp5000000 |
      ============================================================     
      |       TOTAL                              |    Rp15000000 |
      ============================================================     

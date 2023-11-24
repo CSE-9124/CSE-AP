@@ -5,6 +5,7 @@ class UserData:
     def __init__(self):
         self.data = {}
 
+    # Opsi 1
     def show_detail(self):
         if not self.data:
             print("=" * 60)
@@ -14,7 +15,8 @@ class UserData:
             print("Data anda adalah")
             for key, value in self.data.items():
                 print(f"{key}: {value}")
-
+    
+    # Opsi 2
     def change_name(self):
         if not self.data:
             print("=" * 60)
@@ -24,6 +26,7 @@ class UserData:
             self.data['Nama'] = new_name
             print("Nama berhasil diubah.")
 
+    # Opsi 4
     def save_to_file(self):
         if not self.data:
             print("=" * 60)
@@ -49,6 +52,7 @@ class UserData:
             self.data = {}
             print("Berhasil menyimpan data.")
 
+    # Opsi 5
     def create_new_data(self):
         print("=" * 60)
         nama = input("Silahkan Masukkan Nama: ")
@@ -109,7 +113,7 @@ def main():
                     baris = len(file.readlines())
                     data_count = (baris - 3) // 4
                 print("Berhasil")
-                print(f"Jumlah data pada file : {data_count}")
+                print(f"Jumlah data pada file : {data_count} data")
             except FileNotFoundError:
                 print(f"Tidak Terdapat File dengan Nama {file_name}")
                 print("Jumlah Data Pada File : 0 Data")

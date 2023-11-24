@@ -42,13 +42,16 @@ def ubah_nama(data_list):
 def jumlah_data_pada_file(filename):
     try:
         with open(f"{filename}.txt", "r") as file:
-            lines = file.readlines()
-            print(f"Terdapat {len(lines)} data pada file")
+            lines = len(file.readlines())
+            Banyak_Data = (lines - 3) // 4
+            print("Berhasil")
+            print(f"Jumlah data pada file : {Banyak_Data} data")
     except FileNotFoundError:
         print(f"Tidak Terdapat File dengan Nama {filename}.txt")
+        print("Jumlah data pada file : 0 data")
 
 # Opsi 4
-def save_data(data_list, filename):
+def save_data(data_list):
     if len(data_list) == 0:
         print("Data Saat Ini Kosong")
     else:
@@ -72,13 +75,8 @@ def save_data(data_list, filename):
                     F.write(f'{f"Email        : {data.email}"}\n')
                     F.write(f'{f"Password     : {data.password}"}\n')
                     F.write(f'{"=" * 60}')
+        data_list = []
         return 
-
-def save_data_pada_file(data_list, filename):
-    with open(f"{filename}.txt", "a") as file:
-        for data in data_list:
-            file.write(f"{data.nama},{data.email},{data.password}\n")
-    return []
 
 # Opsi 5
 def buat_data_baru():
@@ -112,11 +110,11 @@ def main():
             ubah_nama(data_list)
 
         elif pilihan == "3":
-            filename = "data"
+            filename = input()
             jumlah_data_pada_file(filename)
 
         elif pilihan == "4":
-            data_list = save_data(data_list, filename)
+            data_list = save_data(data_list)
             print("Berhasil")
 
         elif pilihan == "5":

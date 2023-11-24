@@ -1,3 +1,5 @@
+# Soal 2 : Mencari Duplikat (angka yang sama) dari Dua Buah Array.
+
 # CARA 1:
 array1 = map(int, input('Input array ke-1: ').split(' '))
 array2 = map(int, input('Input array ke-2: ').split(' '))

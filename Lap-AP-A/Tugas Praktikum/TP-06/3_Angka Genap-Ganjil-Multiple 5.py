@@ -1,3 +1,5 @@
+# Soal 3 : Mengkategorikan Angka Genap, Ganjil, dan yg Habis dibagi 5
+
 Angka = list(map(int, input('Masukkan beberapa angka: ').split(' ')))
 
 # CARA 1:

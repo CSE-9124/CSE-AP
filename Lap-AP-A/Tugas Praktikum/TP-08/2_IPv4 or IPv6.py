@@ -1,6 +1,7 @@
 # Soal 2 : Mengecek apakah sebuah inputan merupakan IPv4, IPv6 atau bukan keduanya
 import re
 
+# CARA 1 :
 def IPv4(teks):
     pola = r'^(([0-9]|[0-9]{2}|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){3}([0-9]|[0-9]{2}|1[0-9]{2}|2[0-4][0-9]|25[0-5])$'
     cocok = re.match(pola, teks)
@@ -26,6 +27,7 @@ def IP_check(teks):
             print('Bukan IP Address')
 
 
+# --------------------------------------------------------------------------------------------------------------------
 # TEKS 1
 '''This line has trailing whitespace
 121.203.197.20
@@ -55,3 +57,30 @@ for i in range(n):
 
 print()
 IP_check(teks2)
+# --------------------------------------------------------------------------------------------------------------------
+
+
+# CARA 2 :
+def IPv4(check):
+    pattern = r"^((\d|\d{2}|1\d{2}|2[0-4]\d|25[0-5])\.){3}(\d|\d{2}|1\d{2}|2[0-4]\d|25[0-5])$"
+    return re.match(pattern, check)
+
+def IPv6(check):
+    pattern = r"^([\da-f]{0,4}:){7}[\da-f]{0,4}[\da-f]{0,4}$"
+    return re.match(pattern, check)
+
+perulangan = int(input("Berapa kali Anda ingin menginput? : "))
+
+var = []
+for i in range(perulangan):
+    var.append(input(f"Masukkan input ke {i + 1} : "))
+
+for STRING in var:
+    if IPv4(STRING):
+        print("IPv4")
+    elif IPv6(STRING):
+        print("IPv6")
+    else:
+        print("Bukan IP Adress")
+
+

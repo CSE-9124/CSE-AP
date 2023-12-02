@@ -17,9 +17,19 @@ def compareTriplets(a, b):
             pass
     
     hasil = [Score_Alice, Score_Bob]
+
     return hasil
 
 
+a = list(map(int, input().split()))
+b = list(map(int, input().split()))
+
+result = compareTriplets(a, b)
+print(' '.join(map(str, result)))
+
+
+# ======================== Test Case ========================
 a = [17, 28, 30]
 b = [99, 16, 8]
-print (compareTriplets(a, b))
+result = compareTriplets(a, b)
+print(' '.join(map(str, result)))

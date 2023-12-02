@@ -1,5 +1,5 @@
 # ======================== Information ========================
-# Direct Link: https://www.hackerrank.com/challenges/simple-array-sum/problem
+# Direct Link: https://www.hackerrank.com/challenges/solve-me-first?isFullScreen=true
 # Difficulty: Easy
 
 # ======================== Solution ========================

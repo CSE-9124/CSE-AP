@@ -12,3 +12,15 @@ def plusMinus(arr):
     print(f"{(len(Plus) / len(arr)):.6}")
     print(f"{(len(Minus) / len(arr)):.6}")
     print(f"{(len(Zero) / len(arr)):.6}")
+
+n = int(input().strip())
+
+arr = list(map(int, input().rstrip().split()))
+
+plusMinus(arr)
+
+
+# ======================== Test Case ========================
+n = 6
+arr = [-4, 3, -9, 0, 4, 1]
+plusMinus(arr)

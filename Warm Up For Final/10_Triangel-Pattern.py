@@ -12,7 +12,7 @@ for i in range(N):
         print(' ',end='')
             
     for j in range(i+1):
-        print('*',end='')        
+        print('* ',end='')        
     print()
 
 ''' PIRAMID TENGAH '''
